@@ -1,5 +1,5 @@
 {% set name = "CSET" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/CSET-{{ version }}.tar.gz
-  sha256: 390fd03a089be03a554493654fcdeb542319bb759fc357270e36ce618136638b
+  sha256: 8f0b46c20ecd01005410dbed28e2a95ecec4dde54040940a430e778c6c24d910
 
 build:
   noarch: python
@@ -20,12 +20,12 @@ requirements:
   host:
     - python >=3.8
     - setuptools >=61.0
-    - pip
+    - pip >=23.0
   run:
     - python >=3.8
     - numpy
-    - scitools-iris
-    - tomli >=1.1.0
+    - iris >=3.3
+    - ruamel.yaml >=0.17
     - importlib-resources >=3.0.0
 
 test:
