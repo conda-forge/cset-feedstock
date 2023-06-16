@@ -20,12 +20,12 @@ requirements:
   host:
     - python >=3.8
     - setuptools >=61.0
-    - pip
+    - pip >= 23.0
   run:
     - python >=3.8
     - numpy
-    - scitools-iris
-    - tomli >=1.1.0
+    - iris >= 3.3
+    - ruamel.yaml >= 0.17
     - importlib-resources >=3.0.0
 
 test:
