@@ -1,5 +1,5 @@
 {% set name = "CSET" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/CSET-{{ version }}.tar.gz
-  sha256: 8f0b46c20ecd01005410dbed28e2a95ecec4dde54040940a430e778c6c24d910
+  sha256: d02c42dab75160ab83062ff6dd1c03385c39bf777b9fab91c0e9c260db3c1d89
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ test:
     - CSET
   commands:
     - pip check
-    - cset --help
+    - cset --version
   requires:
     - pip
 
