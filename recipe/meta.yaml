@@ -1,5 +1,5 @@
 {% set name = "CSET" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/CSET-{{ version }}.tar.gz
-  sha256: d02c42dab75160ab83062ff6dd1c03385c39bf777b9fab91c0e9c260db3c1d89
+  sha256: 15e5265921349474d1e8d78b21fa7bd3a007de19eb52568c0c33ae44a1f44951
 
 build:
   noarch: python
@@ -22,11 +22,13 @@ requirements:
     - setuptools >=61.0
     - pip >=23.0
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
-    - iris >=3.5
+    - iris >=3.6
     - ruamel.yaml >=0.17
     - pygraphviz >=1.11
+    - isodate
+    - mo_pack
 
 test:
   imports:
