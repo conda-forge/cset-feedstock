@@ -27,8 +27,9 @@ requirements:
     - iris >=3.6
     - ruamel.yaml >=0.17
     - pygraphviz >=1.11
-    - isodate
-    - mo_pack
+    - mo_pack >=0.3
+    - isodate >=0.6
+    - markdown-it-py >=3.0
 
 test:
   imports:
