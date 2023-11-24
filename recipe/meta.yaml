@@ -1,5 +1,5 @@
 {% set name = "CSET" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/CSET-{{ version }}.tar.gz
-  sha256: 15e5265921349474d1e8d78b21fa7bd3a007de19eb52568c0c33ae44a1f44951
+  sha256: bb8fe60b689d9d4467e6c7f182931775322cc2b89c90dc0c6472f3502e33b625
 
 build:
   noarch: python
