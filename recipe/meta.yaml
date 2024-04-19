@@ -1,12 +1,9 @@
-{% set name = "CSET" %}
-{% set version = "24.4.1" %}
-
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: cset
+  version: 24.4.1
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/CSET-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/f3/b1/3c52f7d13328087bcc51f94562ff46c51af6425eb349a3273b6c53665094/cset-24.4.1.tar.gz
   sha256: 8342ad4657fe652cea9d1cdc0614d538e972eec7ced631d7b0b3a37fc365a7a2
 
 build:
