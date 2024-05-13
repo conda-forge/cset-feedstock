@@ -11,13 +11,14 @@ build:
   entry_points:
     - cset = CSET:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python >=3.10
     - setuptools >=64.0
-    - pip >=23.0
+    - setuptools_scm >=8
+    - pip >=24.0
   run:
     - python >=3.10
     - numpy
