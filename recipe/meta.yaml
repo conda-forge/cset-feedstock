@@ -18,7 +18,7 @@ requirements:
     - python >=3.10
     - setuptools >=64.0
     - setuptools_scm >=8
-    - pip >=23.0
+    - pip >=24.0
   run:
     - python >=3.10
     - numpy
