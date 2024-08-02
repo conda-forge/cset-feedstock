@@ -11,7 +11,7 @@ build:
   entry_points:
     - cset = CSET:main
   script: "{{ PYTHON }} -m pip install . -vv"
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,6 +28,7 @@ requirements:
     - mo_pack >=0.3
     - isodate >=0.6
     - markdown-it-py >=3.0
+    - nc-time-axis
 
 test:
   imports:
