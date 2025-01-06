@@ -1,3 +1,5 @@
+{% set python_min = "3.10" %}
+
 package:
   name: cset
   version: 24.8.0
@@ -15,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=64.0
     - setuptools_scm >=8
     - pip >=24.0
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - iris >=3.6
     - ruamel.yaml >=0.17
@@ -38,6 +40,7 @@ test:
     - cset --version
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/MetOffice/CSET
