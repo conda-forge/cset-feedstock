@@ -2,11 +2,11 @@
 
 package:
   name: cset
-  version: 25.2.0rc2
+  version: 25.2.0rc3
 
 source:
-  url: https://files.pythonhosted.org/packages/37/ce/9662f0e8e11c8bc542f7cd57ddd7e270beb6b2fbead3868b82f3eac51f31/cset-25.2.0rc2.tar.gz
-  sha256: 8256c74ba7c50ea3297d95327e7ee25407e7917f5e678f49b9de33208ad4224d
+  url: https://files.pythonhosted.org/packages/da/b9/3378a7202853d259a90172c80fad758d626887e4e98f2ce068a0b2c65e92/cset-25.2.0rc3.tar.gz
+  sha256: ee42def0caf1f1c081d448bec435da69940541d522c224cacdb5208a4a5b7065
 
 build:
   noarch: python
