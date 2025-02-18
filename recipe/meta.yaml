@@ -2,18 +2,18 @@
 
 package:
   name: cset
-  version: 24.8.0
+  version: 25.2.0rc2
 
 source:
-  url: https://files.pythonhosted.org/packages/36/5e/9843512e407de724a61621f1573df14941c4b0b92a405c010de598eb5954/cset-24.8.0.tar.gz
-  sha256: c2d704877bd7b996a655fe42bbdda434f38d36f061dff3b18c90e4890b652ee3
+  url: https://files.pythonhosted.org/packages/37/ce/9662f0e8e11c8bc542f7cd57ddd7e270beb6b2fbead3868b82f3eac51f31/cset-25.2.0rc2.tar.gz
+  sha256: 8256c74ba7c50ea3297d95327e7ee25407e7917f5e678f49b9de33208ad4224d
 
 build:
   noarch: python
   entry_points:
     - cset = CSET:main
   script: "{{ PYTHON }} -m pip install . -vv"
-  number: 2
+  number: 0
 
 requirements:
   host:
