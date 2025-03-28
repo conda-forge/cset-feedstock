@@ -1,0 +1,60 @@
+context:
+  python_min: "3.10"
+  version: "25.3.1"
+
+package:
+  name: cset
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
+  sha256: 5c8fcf379ecf4686930254a5d110f8df2ecff3278bbba67995ce84479e3cc574
+
+build:
+  number: 1
+  noarch: python
+  script: "python -m pip install . --no-deps -vv"
+  python:
+    entry_points:
+      - cset = CSET:main
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=64.0
+    - setuptools_scm >=8
+    - pip >=24.0
+  run:
+    - python >=${{ python_min }}
+    - numpy
+    - iris >=3.6
+    - ruamel.yaml >=0.17
+    - pygraphviz >=1.11
+    - mo_pack >=0.3
+    - isodate >=0.6
+    - markdown-it-py >=3.0
+    - nc-time-axis
+    - iris-grib
+
+tests:
+  - python:
+      imports:
+        - CSET
+      pip_check: true
+  - script: cset --version
+    requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+
+about:
+  summary: Convective Scale Evaluation Tool for evaluation and investigation of regional models.
+  homepage: https://github.com/MetOffice/CSET
+  repository: https://github.com/MetOffice/CSET
+  documentation: https://metoffice.github.io/CSET
+  license: Apache-2.0
+  license_file: LICENCE
+
+extra:
+  recipe-maintainers:
+    - jfrost-mo
