@@ -11,7 +11,7 @@ source:
   sha256: c3b633347a248f14f7065de5b085c24219ccac4bc160d56e3e4168809a2123f1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy
-    - iris >=3.6
+    - iris >=3.12.2
     - ruamel.yaml >=0.17
     - pygraphviz >=1.11
     - mo_pack >=0.3
@@ -35,8 +35,6 @@ requirements:
     - markdown-it-py >=3.0
     - nc-time-axis
     - iris-grib
-    # Dask pinned. See https://github.com/SciTools/iris/issues/6417
-    - dask ==2025.3.0
 
 tests:
   - python:
