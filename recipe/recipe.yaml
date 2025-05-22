@@ -1,6 +1,6 @@
 context:
   python_min: "3.11"
-  version: "25.5.0"
+  version: "25.5.1"
 
 package:
   name: cset
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: c3b633347a248f14f7065de5b085c24219ccac4bc160d56e3e4168809a2123f1
+  sha256: de4542f2c82872c6e06514975013249b799b00b60a32adc6b1396cdafceba11a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
