@@ -1,6 +1,6 @@
 context:
   python_min: "3.11"
-  version: "25.5.1"
+  version: "25.5.2"
 
 package:
   name: cset
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: de4542f2c82872c6e06514975013249b799b00b60a32adc6b1396cdafceba11a
+  sha256: ed9962721a1be6e59ae6e235942f6bea13ae0aa02fa99857003ef76e2ffaadb7
 
 build:
   number: 0
