@@ -1,6 +1,6 @@
 context:
   python_min: "3.11"
-  version: "25.7.0"
+  version: "25.12.0"
 
 package:
   name: cset
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: 3f9f435e2165b6d1fdb54ef96bb51cb5b90e7e70ce37e10627c6ad06c39e6874
+  sha256: d36477079ef6b4045fdc2b91e1b10c99ec0dd2088703f694bf68d057d2f8b3a0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -35,6 +35,8 @@ requirements:
     - markdown-it-py >=3.0
     - nc-time-axis
     - iris-grib
+    - scipy
+    - scikit-image
 
 tests:
   - python:
@@ -49,7 +51,7 @@ tests:
 
 about:
   summary: Convective Scale Evaluation Tool for evaluation and investigation of regional models.
-  homepage: https://github.com/MetOffice/CSET
+  homepage: https://metoffice.github.io/CSET
   repository: https://github.com/MetOffice/CSET
   documentation: https://metoffice.github.io/CSET
   license: Apache-2.0
