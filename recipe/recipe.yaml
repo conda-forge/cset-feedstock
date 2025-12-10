@@ -1,6 +1,6 @@
 context:
-  python_min: "3.11"
-  version: "25.12.0"
+  python_min: "3.12"
+  version: "25.12.1"
 
 package:
   name: cset
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: d36477079ef6b4045fdc2b91e1b10c99ec0dd2088703f694bf68d057d2f8b3a0
+  sha256: c511c62a88720964467be7be0e66aad3e67632cf1f0fa87d6e75d9c8bbc0b373
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }},<3.14
     - numpy
-    - iris >=3.12.2
+    - iris >=3.14.1
     - ruamel.yaml >=0.17
     - pygraphviz >=1.11
     - mo_pack >=0.3
