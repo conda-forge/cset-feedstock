@@ -7,7 +7,7 @@ Home: https://metoffice.github.io/CSET
 
 Package license: Apache-2.0
 
-Summary: Convective Scale Evaluation Tool for evaluation and investigation of regional models.
+Summary: Community Seamless Evaluation Toolkit for evaluation and investigation of weather and climate models.
 
 Development: https://github.com/MetOffice/CSET
 
@@ -147,5 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@daflack](https://github.com/daflack/)
 * [@jfrost-mo](https://github.com/jfrost-mo/)
 
