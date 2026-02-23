@@ -1,6 +1,6 @@
 context:
   python_min: "3.12"
-  version: "25.12.1"
+  version: "26.2.0"
 
 package:
   name: cset
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: c511c62a88720964467be7be0e66aad3e67632cf1f0fa87d6e75d9c8bbc0b373
+  sha256: 57f394c08b5b2b31f1d7027425c47824d7cd1cb0683c39a28c549fdf9678bc0a
 
 build:
   number: 0
@@ -50,7 +50,7 @@ tests:
         - python ${{ python_min }}.*
 
 about:
-  summary: Convective Scale Evaluation Tool for evaluation and investigation of regional models.
+  summary: Community Seamless Evaluation Toolkit for evaluation and investigation of weather and climate models.
   homepage: https://metoffice.github.io/CSET
   repository: https://github.com/MetOffice/CSET
   documentation: https://metoffice.github.io/CSET
