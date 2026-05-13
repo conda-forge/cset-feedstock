@@ -1,6 +1,6 @@
 context:
   python_min: "3.12"
-  version: "26.2.0"
+  version: "26.5.0"
 
 package:
   name: cset
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: 57f394c08b5b2b31f1d7027425c47824d7cd1cb0683c39a28c549fdf9678bc0a
+  sha256: 83a542e75d06f22e8995198c6cfeeddf49b55a04a459a5b6dffab77a987d99b0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -37,6 +37,8 @@ requirements:
     - iris-grib
     - scipy
     - scikit-image
+    - dask-core
+    - proj <9.8
 
 tests:
   - python:
@@ -61,3 +63,4 @@ extra:
   recipe-maintainers:
     - daflack
     - jfrost-mo
+    - Sylviabohnenstengel
