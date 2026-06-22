@@ -11,7 +11,7 @@ source:
   sha256: 84742c66ff252e56dc40fe871718b1e00aebbb098f17afafda6deba4df46a15e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -39,6 +39,7 @@ requirements:
     - scikit-image
     - dask-core
     - proj <9.8
+    - matplotlib <3.11
 
 tests:
   - python:
