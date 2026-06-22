@@ -39,7 +39,7 @@ requirements:
     - scikit-image
     - dask-core
     - proj <9.8
-    - matplotlib <3.11
+    - matplotlib-base <3.11
 
 tests:
   - python:
