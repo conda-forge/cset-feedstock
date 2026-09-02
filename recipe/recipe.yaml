@@ -1,6 +1,6 @@
 context:
   python_min: "3.12"
-  version: "26.5.1"
+  version: "26.9.0"
 
 package:
   name: cset
@@ -11,7 +11,7 @@ source:
   sha256: 84742c66ff252e56dc40fe871718b1e00aebbb098f17afafda6deba4df46a15e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -37,10 +37,12 @@ requirements:
     - iris-grib
     - scipy
     - scikit-image
+    - scores
+    - xarray
     - dask-core
     - proj <9.8
     - matplotlib-base <3.11
-
+    - simple-track
 tests:
   - python:
       imports:
