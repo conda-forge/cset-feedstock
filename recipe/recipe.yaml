@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: 84742c66ff252e56dc40fe871718b1e00aebbb098f17afafda6deba4df46a15e
+  sha256: cb070226c6bf6b79a14daed2e391b4385672b0d05807d48647faf273fbaf5b9e
 
 build:
   number: 0
