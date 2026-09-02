@@ -45,6 +45,9 @@ requirements:
     - simple-track
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - CSET
       pip_check: true
