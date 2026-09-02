@@ -1,6 +1,6 @@
 context:
   python_min: "3.12"
-  version: "26.5.1"
+  version: "26.9.0"
 
 package:
   name: cset
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/cset/cset-${{ version }}.tar.gz
-  sha256: 84742c66ff252e56dc40fe871718b1e00aebbb098f17afafda6deba4df46a15e
+  sha256: cb070226c6bf6b79a14daed2e391b4385672b0d05807d48647faf273fbaf5b9e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -37,12 +37,17 @@ requirements:
     - iris-grib
     - scipy
     - scikit-image
+    - scores
+    - xarray
     - dask-core
     - proj <9.8
     - matplotlib-base <3.11
-
+    - simple-track
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - CSET
       pip_check: true
