@@ -41,7 +41,7 @@ requirements:
     - xarray
     - dask-core
     - proj <9.8
-    - matplotlib-base = 3.10.9
+    - matplotlib-base =3.10.9
     - simple-track
 tests:
   - python:
